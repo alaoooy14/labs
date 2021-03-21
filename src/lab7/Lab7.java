@@ -22,8 +22,6 @@ public class Lab7 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        new Example();
-        System.exit(1);
         String[] lines = grades.split("\n");
         String[] head = lines[0].split("-");
         Student[] theStudents = new Student[lines.length - 1];
