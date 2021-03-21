@@ -16,9 +16,6 @@ public class Student {
 
     public String highestGrade() {
         //write your algorithm here
-        if (true) {
-
-        }
         return "Your higher score in Physics (96)";
     }
 
