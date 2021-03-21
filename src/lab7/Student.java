@@ -26,7 +26,7 @@ public class Student {
             //compare the current grade in loop with the assumed variable
             if (grade > highestGrade) {
                 highestGrade = grade;
-                course = transcript[index][1];
+                course = transcript[index][0];
             }
         }
         return "Your highest grade in " + course + " (" + highestGrade + ")";
@@ -43,7 +43,7 @@ public class Student {
             //compare the current grade in loop with the assumed variable
             if (grade < lowestGrade) {
                 lowestGrade = grade;
-                course = transcript[index][1];
+                course = transcript[index][0];
             }
         }
         return "Your lowest grade in " + course + " (" + lowestGrade + ")";

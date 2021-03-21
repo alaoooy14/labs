@@ -45,7 +45,7 @@ public class Lab7 {
         
         //print first student grade
         System.out.println(theStudents[0].highestGrade());
-        System.out.println(theStudents[0].highestGrade());
+        System.out.println(theStudents[0].lowestGrade());
         
         /**
          *              ##  To Do   ##
@@ -57,7 +57,7 @@ public class Lab7 {
          *      Hassan Alaiafi      100
          *      Salem Alslaimi      100
          */
-        
+         
     }
 
 }
