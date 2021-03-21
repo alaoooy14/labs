@@ -42,6 +42,22 @@ public class Lab7 {
 
             theStudents[index - 1] = aStudent;
         }
+        
+        //print first student grade
+        System.out.println(theStudents[0].highestGrade());
+        System.out.println(theStudents[0].highestGrade());
+        
+        /**
+         *              ##  To Do   ##
+         * 1. loop for all students to get a grade for a specific
+         *      subject such as Chemistry
+         * 2. Display grades along with students name in ascending order
+         *      output should look like the following lines
+         *      Hani Althubaiti     90
+         *      Hassan Alaiafi      100
+         *      Salem Alslaimi      100
+         */
+        
     }
 
 }
