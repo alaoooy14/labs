@@ -57,6 +57,11 @@ public class Student {
          * Integer.parseInt(transcript[index][1]); 3.instead of returning zero
          * (0) return the grade
          */
+        or(int index = 0; index < transcript.length; ++index){
+     if (transcript[index][0].equals(course)) {
+         return Integer.parseInt(transcript[index][1]);
+     }
+ }
         return 0;
     }
 }
