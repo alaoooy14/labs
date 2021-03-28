@@ -59,7 +59,30 @@ public class Lab7 {
          *      Hassan Alaiafi      100
          *      Salem Alslaimi      100
          */
-         
+        int[] std_marks = new int[Lines.length - 1];
+        String[] std_names = new String[Lines.length - 1];
+        for (int i = 0; i < thestudent.length; i++) {
+            std_marks[i] = thestudent[i].gradeByCourseName("Chemistry");
+            std_names[i] = thestudent[i].name;
+        }
+
+        for (int i = 0; i < std_marks.length; i++) {
+            for (int j = i + 1; j < std_marks.length; j++) {
+                if (std_marks[i] > std_marks[j]) {
+                    int tmp = std_marks[i];
+                    std_marks[i] = std_marks[j];
+                    std_marks[j] = tmp;
+
+                    String tmpName = std_names[i];
+                    std_names[i] = std_names[j];
+                    std_names[j] = tmpName;
+                }
+            }
+        }
+        for (int i = 0; i < std_marks.length; i++) {
+            System.out.print(std_names[i] + std_marks[i] + "\n");
+        }
+    } 
     }
 
 }
